@@ -1,3 +1,88 @@
+# 🏵 Token Vendor – Challenge 2 | SpeedRunEthereum
+
+A decentralized token vending machine built with 🏗 Scaffold-ETH 2 and deployed on the Sepolia testnet.
+
+---
+
+## 🌐 Live Frontend
+
+👉 [challenge-2-token-vendor.vercel.app](https://challenge-2-token-vendor-orpin.vercel.app/)
+
+---
+
+## 👤 Builder Profile
+
+🧑‍💻 View my progress on SpeedRunEthereum:
+🔗 [speedrunethereum.com/builders/0x58ad103D0C0E69250CaC89Ddf0BDaD396914C411](https://speedrunethereum.com/builders/0x58ad103D0C0E69250CaC89Ddf0BDaD396914C411)
+
+---
+
+## 🔗 Contract on Etherscan
+
+📄 Deployed Vendor Contract (Sepolia):
+🔗 [0xFcD7B168cCACEcAF878e23108Ed3C8e469Cd1D68](https://sepolia.etherscan.io/address/0xFcD7B168cCACEcAF878e23108Ed3C8e469Cd1D68)
+
+---
+
+## 📦 Features
+
+✅ ERC-20 token (`GLD`) with fixed supply
+✅ Buy tokens using ETH
+✅ Sell tokens back to the vendor using `approve()` + `sellTokens()`
+✅ Withdraw ETH from vendor (owner only)
+✅ Event log for buy/sell transactions
+✅ Responsive UI with Scaffold-ETH 2 components
+✅ Sepolia testnet deployment + verified contract
+
+---
+
+## 🔍 Contracts
+
+### `YourToken.sol`
+
+* Inherits OpenZeppelin ERC20
+* Mints 1000 \* 10^18 `GLD` to deployer
+
+### `Vendor.sol`
+
+* Supports buying and selling tokens with ETH
+* Fixed `tokensPerEth = 100`
+* Emits `BuyTokens` and `SellTokens` events
+* Only owner can withdraw ETH
+
+---
+
+## 🛠 Tech Stack
+
+* 💻 Scaffold-ETH 2 (Next.js + Hardhat + Wagmi + RainbowKit)
+* 💰 Solidity (ERC20 via OpenZeppelin)
+* 📡 Ethers.js
+* 🔗 Deployed on Sepolia testnet
+* 🚀 Hosted on Vercel
+
+---
+
+## 🧪 How It Works
+
+1. Visit the [live frontend](https://challenge-2-token-vendor-orpin.vercel.app/)
+2. Connect your wallet (Sepolia network)
+3. Buy tokens (100 GLD per ETH)
+4. Transfer or sell tokens
+5. Check Events tab to see Buy/Sell activity
+
+---
+
+## 🧪 Test Results
+
+All core functionality tested via UI and `yarn test` scripts:
+
+* [x] Buy tokens with ETH
+* [x] Sell tokens with `approve` pattern
+* [x] Transfer tokens to another wallet
+* [x] Withdraw ETH (owner only)
+* [x] Events logged correctly
+
+---
 # 🏗 Scaffold-ETH 2
 
 <h4 align="center">
